@@ -16,7 +16,16 @@ const images = [
   },
 ];
 
+const listGallery = document.querySelector('#gallery');
 
+let content = '';
+
+images.forEach(img => {
+  content += `<li><img class='gallery-item' src=${img.url} alt=${img.alt}/></li>`;
+});
+
+
+listGallery.insertAdjacentHTML('afterbegin', content);
 
 // Напиши скрипт для создания галлереи изображений по массиву данных.
 

@@ -1,11 +1,8 @@
-// const listCategory = document.querySelectorAll("#categories .item")
-// console.log(`В списке ${listCategory.length} категории.`)
-// for (const elem of listCategory) {
-//     console.log(`Категория: ${elem.firstElementChild.textContent}, Количество: ${elem.lastElementChild.children.length}`)
-// }
-
-
-
+const listCategory = document.querySelectorAll("#categories .item")
+console.log(`В списке ${listCategory.length} категории.`)
+for (const elem of listCategory) {
+    console.log(`Категория: ${elem.firstElementChild.textContent}, Количество: ${elem.lastElementChild.children.length}`)
+}
 
 // Напиши скрипт, который выполнит следующие операции.
 
