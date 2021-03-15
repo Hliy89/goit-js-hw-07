@@ -20,8 +20,8 @@ const listGallery = document.querySelector('#gallery');
 
 let content = '';
 
-images.forEach(img => {
-  content += `<li><img class='gallery-item' src=${img.url} alt=${img.alt}/></li>`;
+images.forEach(({url, alt}) => {
+  content += `<li><img class='gallery-item' src=${url} alt=${alt}/></li>`;
 });
 
 
