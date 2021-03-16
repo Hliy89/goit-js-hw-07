@@ -10,15 +10,7 @@ createBtn.addEventListener("click", function () {
 
 clearBtn.addEventListener("click", onClearButton);
 
-// function onCreateBoxes(amount) {
-//     for (let i = 1; i <= amount; i += 1) {
-//         const boxesEl = document.createElement("div");
-//         boxesEl.style.width = `${20 + i * 10}px`;
-//         boxesEl.style.height = `${20 + i * 10}px`;
-//         boxesEl.style.backgroundColor = `rgb(${getRandom(0, 255)}, ${getRandom(0, 255)}, ${getRandom(0, 255)})`;
-//         boxes.append(boxesEl);
-//     }
-// }
+// ---------СПОСОБ 1-й----------
 
 function onCreateBoxes(amount) {
     let firstDivWidth = 30;
@@ -42,7 +34,20 @@ function onClearButton() {
 
 function getRandom() {
             return Math.floor(Math.random() * 256);
-        }
+}
+
+// ---------СПОСОБ 2-й----------
+        
+// function onCreateBoxes(amount) {
+//     for (let i = 1; i <= amount; i += 1) {
+//         const boxesEl = document.createElement("div");
+//         boxesEl.style.width = `${20 + i * 10}px`;
+//         boxesEl.style.height = `${20 + i * 10}px`;
+//         boxesEl.style.backgroundColor = `rgb(${getRandom(0, 255)}, ${getRandom(0, 255)}, ${getRandom(0, 255)})`;
+//         boxes.append(boxesEl);
+//     }
+// }
+
 
 // Напиши скрипт создания и очистки коллекции элементов.
 // Пользователь вводит количество элементов в input и нажимает кнопку Создать,
