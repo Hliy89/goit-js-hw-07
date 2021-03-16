@@ -17,9 +17,6 @@ function onCreateBoxes(amount) {
         boxesEl.style.width = `${20 + i * 10}px`;
         boxesEl.style.height = `${20 + i * 10}px`;
         boxesEl.style.backgroundColor = `rgb(${getRandom(0, 255)}, ${getRandom(0, 255)}, ${getRandom(0, 255)})`;
-        function getRandom(min, max) {
-            return Math.ceil(Math.random() * (max - min) + min);
-        }
         boxes.append(boxesEl);
     }
 }
@@ -27,6 +24,10 @@ function onCreateBoxes(amount) {
 function onClearButton() {
     boxes.innerHTML = "";
 }
+
+function getRandom(min, max) {
+            return Math.ceil(Math.random() * (max - min) + min);
+        }
 
 // Напиши скрипт создания и очистки коллекции элементов.
 // Пользователь вводит количество элементов в input и нажимает кнопку Создать,
