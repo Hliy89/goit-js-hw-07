@@ -24,7 +24,6 @@ images.forEach(({url, alt}) => {
   content += `<li><img class='gallery-item' src=${url} alt=${alt}/></li>`;
 });
 
-
 listGallery.insertAdjacentHTML('afterbegin', content);
 
 // Напиши скрипт для создания галлереи изображений по массиву данных.

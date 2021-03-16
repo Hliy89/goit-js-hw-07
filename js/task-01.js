@@ -4,6 +4,12 @@ for (const elem of listCategory) {
     console.log(`Категория: ${elem.firstElementChild.textContent}, Количество: ${elem.lastElementChild.children.length}`)
 }
 
+// const listCategory = document.querySelectorAll("#categories .item");
+// console.log(`В списке ${listCategory.length} категории.`);
+// listCategory.forEach(item =>
+//     console.log(`Категория: ${item.firstElementChild.textContent}, Количество: ${item.lastElementChild.children.length}`))
+
+
 // Напиши скрипт, который выполнит следующие операции.
 
 // Посчитает и выведет в консоль количество категорий в ul#categories,

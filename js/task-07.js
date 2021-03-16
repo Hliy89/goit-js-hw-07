@@ -1,8 +1,13 @@
 const inputControl = document.getElementById('font-size-control');
 const text = document.getElementById('text');
 
-inputControl.addEventListener("input", function (event) {
-    text.style.fontSize = event.currentTarget.value + "px";
+// inputControl.addEventListener("input", function (event) {
+//     text.style.fontSize = event.currentTarget.value + "px";
+//     console.log(event.currentTarget)
+// })
+
+inputControl.addEventListener("input", function () {
+    text.style.fontSize = this.value + "px";
 })
 
 // Напиши скрипт, который реагирует на изменение значения
