@@ -6,9 +6,15 @@ const text = document.getElementById('text');
 //     console.log(event.currentTarget)
 // })
 
-inputControl.addEventListener("input", function () {
+// inputControl.addEventListener("input", function () {
+//     text.style.fontSize = this.value + "px";
+// })
+
+inputControl.addEventListener("input", onInputChangeSize);
+
+function onInputChangeSize() {
     text.style.fontSize = this.value + "px";
-})
+}
 
 // Напиши скрипт, который реагирует на изменение значения
 // input#font - size - control(событие input) и изменяет инлайн - стиль
